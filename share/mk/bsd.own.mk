@@ -169,12 +169,12 @@ MK_INSTALLLIB?=yes
 # Control clang specific features
 # MK_CLANG_EXTRAS controls if additional clang binaries besides the
 # base compiler should be built
-MK_CLANG_EXTRAS?=No
+MK_CLANG_EXTRAS?=yes
 
 # MK_CLANG_IS_CC controls if clang should be installed as /usr/bin/cc
-MK_CLANG_IS_CC?=No
+MK_CLANG_IS_CC?=no
 
 # MK_SHARED_TOOLCHAIN forces compiler toolchain to build static (if set to no).
-MK_SHARED_TOOLCHAIN?=Yes
+MK_SHARED_TOOLCHAIN?=yes
 
 MK_ARM_EABI?=no
