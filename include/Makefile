@@ -45,6 +45,7 @@ RDIRS=	../lib/libcrypto ../lib/libcurses ../lib/libc++ ../lib/libc++abi \
 	../lib/libpanel ../lib/libpcap ../lib/librpcsvc ../lib/librthread \
 	../lib/libskey ../lib/libsqlite3 ../lib/libssl \
 	../lib/libusbhid ../lib/libutil ../lib/libz \
+	../lib/clang/include \
 	../usr.bin/lex \
 	../sys/arch/${MACHINE}
 
