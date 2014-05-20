@@ -80,6 +80,8 @@ build:
 	    ${SUDO} SKIPDIR="ldd ldconfig" NOMAN=1 ${MAKE} install
 	cd ${.CURDIR}/lib/csu && ${MAKE} depend && ${MAKE} && \
 	    NOMAN=1 exec ${SUDO} ${MAKE} install
+	cd ${.CURDIR}/lib/libcompiler_rt && ${MAKE} depend && ${MAKE} && \
+	    NOMAN=1 exec ${SUDO} ${MAKE} install
 	cd ${.CURDIR}/lib/libc && ${MAKE} depend && ${MAKE} && \
 	    NOMAN=1 exec ${SUDO} ${MAKE} install
 	cd ${.CURDIR}/lib && ${MAKE} depend && ${MAKE} && \
@@ -88,6 +90,7 @@ build:
 
 buildworld:
 	${SUDO} rm -rf /usr/obj/*
+	cd ${.CURDIR}/share/mk && exec ${SUDO} ${MAKE} install
 	${MAKE} obj >/dev/null
 	cd ${.CURDIR}/etc && ${SUDO} DESTDIR=/ ${MAKE} distrib-dirs
 	${MAKE} build
