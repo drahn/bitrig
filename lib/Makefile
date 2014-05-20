@@ -5,6 +5,6 @@ SUBDIR=	csu libarch libc libc++ libc++abi libcrypto libcurses libedit \
 	libevent libexpat libform libfuse libkeynote libkvm libl libm libmenu \
 	libocurses libossaudio libpanel libpcap librthread librpcsvc \
 	libskey libsndio libsqlite3 libssl libusbhid libutil liby libz
-SUBDIR+=clang
+SUBDIR+=clang libcompiler_rt
 
 .include <bsd.subdir.mk>
