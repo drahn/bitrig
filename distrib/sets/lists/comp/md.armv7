@@ -109,4 +109,3 @@
 ./usr/include/armv7/trap.h
 ./usr/include/armv7/vmparam.h
 ./usr/lib/libclang_rt.arm.a
-
